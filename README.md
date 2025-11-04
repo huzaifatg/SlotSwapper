@@ -213,8 +213,9 @@ NODE_ENV=development
 
 **Example MongoDB URI format:**
 ```
-mongodb+srv://username:password@cluster.mongodb.net/database_name?retryWrites=true&w=majority
+mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database_name>?retryWrites=true&w=majority
 ```
+Replace `<username>`, `<password>`, `<cluster>`, and `<database_name>` with your actual MongoDB Atlas credentials.
 
 ### Step 5: Verify Setup
 
@@ -607,8 +608,8 @@ frontend/
 | Variable | Description | Example |
 |----------|-------------|---------|
 | `PORT` | Server port number | `5000` |
-| `MONGODB_URI` | MongoDB connection string | `mongodb+srv://user:pass@cluster.mongodb.net/dbname` |
-| `JWT_SECRET` | Secret key for JWT signing | `your_super_secure_random_string_here` |
+| `MONGODB_URI` | MongoDB connection string | `mongodb+srv://<user>:<pass>@<cluster>.mongodb.net/<dbname>` |
+| `JWT_SECRET` | Secret key for JWT signing | `<your_super_secure_random_string>` |
 | `NODE_ENV` | Environment mode | `development` or `production` |
 
 ### Frontend
