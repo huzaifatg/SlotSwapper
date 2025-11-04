@@ -1,0 +1,17 @@
+{
+  "name": "slotswapper",
+  "version": "1.0.0",
+  "description": "Peer-to-peer time-slot scheduling application",
+  "scripts": {
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["slot", "swap", "scheduling", "mern"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
